@@ -29,7 +29,14 @@
                             <outlet property="delegate" destination="bJY-qM-Iyq" id="cVR-MG-9qK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="ToDoLog" id="8DB-sf-d0O"/>
+                    <navigationItem key="navigationItem" title="ToDoLog" id="8DB-sf-d0O">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="cHl-YJ-cqN">
+                            <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="bJY-qM-Iyq" id="vky-si-vJA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LVb-Ua-6w1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -58,4 +65,7 @@
             <point key="canvasLocation" x="960.86956521739137" y="97.767857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="64" height="56"/>
+    </resources>
 </document>
